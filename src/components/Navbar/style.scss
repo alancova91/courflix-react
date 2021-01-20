@@ -1,0 +1,159 @@
+.hidden-menu {
+  display: none;
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-bottom: 1px solid #fafafa;
+    margin-top: 14px;
+  }
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-bottom: 1px solid #fafafa;
+    margin-top: 0px;
+  }
+
+  .link-hidden-menu {
+    clear: left;
+    text-decoration: none;
+    color: white;
+    margin: 0 15px 0 10px;
+    font-weight: 600;
+    font-size: 1rem;
+
+    @media (max-width: 1024px) {
+      margin: 0 35px;
+    }
+
+    @media (max-width: 768px) {
+      margin: 0 20px 0 20px;
+    }
+  }
+
+  #no-separation {
+    line-height: 1.6rem;
+    padding: 10px 0px;
+    @media (max-width: 768px) {
+      padding: 22.5px 0px;
+    }
+    @media (max-width: 1024px) {
+      padding: 22.5px 0px;
+    }
+  }
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0.801218);
+  display: flex;
+  align-items: center;
+  padding: 12px 60px 12px 50px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  @media (max-width: 1024px) {
+    padding: 12px 5px 12px 0px;
+  }
+  @media (max-width: 768px) {
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  @media (max-width: 425px) {
+    padding: 0px 0px 0px 0px;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  .nav-menu {
+    text-align: left;
+    height: 55px;
+    line-height: 70px;
+    @media (max-width: 1024px) {
+      height: 50px;
+    }
+  }
+
+  .hamburger-react {
+    display: none;
+
+    @media (max-width: 1024px) {
+      display: block;
+      margin-left: 30px;
+    }
+
+    @media (max-width: 768px) {
+      display: block;
+      padding-top: 10px;
+      margin: 0 0 0 10px;
+    }
+  }
+
+  .logo-wrapper {
+    margin: 0 85px 0 20px;
+    width: 150px;
+    flex-shrink: 0;
+
+    @media (max-width: 1024px) {
+      margin: 0 35px 0 0px;
+    }
+
+    @media (max-width: 768px) {
+      margin: 0 40px 0 20px;
+    }
+
+    .logo {
+      display: block;
+      width: 150px;
+      @media (max-width: 1024px) {
+        position: absolute;
+        left: 90px;
+        top: 20px;
+        width: 135px;
+      }
+      @media (max-width: 768px) {
+        position: absolute;
+        left: 65px;
+        top: 10px;
+        width: 115px;
+      }
+    }
+  }
+
+  .links-wrapper {
+    @media (max-width: 1024px) {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+
+    @media (max-width: 320px) {
+      display: none;
+    }
+
+    .link {
+      text-decoration: none;
+      color: white;
+      margin-right: 25px;
+      font-weight: 600;
+      font-size: 1.2rem;
+      @media (max-width: 1024px) {
+        font-size: 1.2rem;
+        margin-right: 12px;
+      }
+
+      &:hover {
+        color: gray;
+      }
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}

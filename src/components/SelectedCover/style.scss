@@ -1,0 +1,202 @@
+.selected-cover-wrapper {
+  background-image: url(./arrow-background-4.jpg);
+  background-position: top;
+  background-size: cover;
+
+  .series-content-wrapper {
+    color: #fff;
+    padding: 0px 0 30px 60px;
+    max-width: 740px;
+    min-height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    @media (max-width: 1024px) {
+      padding: 0 0 30px 35px;
+    }
+
+    @media (max-width: 768px) {
+      color: #fff;
+      padding: 0 0 0 15px;
+      width: 100%;
+      max-width: 425px;
+      height: auto;
+      min-height: 300px;
+    }
+
+    @media (max-width: 320px) {
+      color: #fff;
+      padding: 0 0 0 15px;
+      min-height: 250px;
+    }
+
+    .logo-arrow {
+      width: 400px;
+      padding-bottom: 25px;
+
+      @media (max-width: 320px) {
+        display: none;
+      }
+
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    .selected-title {
+      display: none;
+
+      @media (max-width: 320px) {
+        display: inline-block;
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 30px;
+      }
+
+      @media (max-width: 768px) {
+        display: inline-block;
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 30px;
+      }
+    }
+
+    .series-info {
+      display: flex;
+      margin-bottom: 45px;
+
+      @media (max-width: 320px) {
+        display: flex;
+        margin-bottom: 0px;
+      }
+
+      @media (max-width: 768px) {
+        display: flex;
+        margin-bottom: 0px;
+      }
+
+      .info {
+        font-size: 1.125rem;
+        margin-right: 15px;
+
+        @media (max-width: 768px) {
+          font-size: 1rem;
+          margin-right: 10px;
+        }
+        @media (max-width: 320px) {
+          font-size: 1rem;
+          margin-right: 10px;
+        }
+      }
+    }
+
+    #display-none {
+      color: green;
+      @media (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    .button-wrapper {
+      display: flex;
+      @media (max-width: 768px) {
+        padding: 15px 0px 35px 0;
+      }
+      @media (max-width: 320px) {
+        padding: 15px 0px 25px 0;
+      }
+
+      .action {
+        background-color: rgba(157, 151, 151, 0.541521);
+        padding: 20px 50px;
+        border-radius: 9px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.3rem;
+        margin: 0 35px 20px 0px;
+        line-height: 20px;
+        font-weight: 400;
+
+        &:hover {
+          background-color: slategray;
+        }
+
+        @media (max-width: 768px) {
+          background-color: rgba(157, 151, 151, 0.541521);
+          padding: 20px 27px;
+          border-radius: 7px;
+          text-decoration: none;
+          color: #fff;
+          font-size: 1rem;
+          line-height: 0px;
+          font-weight: 400;
+          margin: 0 10px 0 0;
+        }
+
+        @media (max-width: 320px) {
+          background-color: rgba(157, 151, 151, 0.541521);
+          padding: 20px 17px;
+          border-radius: 7px;
+          text-decoration: none;
+          color: #fff;
+          font-size: 1rem;
+          line-height: 0px;
+          font-weight: 400;
+          margin: 0 10px 0 0;
+        }
+
+        &:first-of-type {
+          background: #ed0a1d;
+          padding: 20px 40px;
+
+          &:first-of-type:hover {
+            background-color: firebrick;
+          }
+
+          @media (max-width: 768px) {
+            padding: 20px 19px;
+          }
+        }
+      }
+
+      .like-button {
+        padding: 10px;
+        border: 2px solid #d8d8d8;
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        margin-right: 15px;
+
+        &:hover {
+          background-color: slategray;
+        }
+
+        @media (max-width: 768px) {
+          display: none;
+        }
+
+        @media (max-width: 320px) {
+          display: none;
+        }
+      }
+    }
+
+    .content-description {
+      font-size: 1.3rem;
+      padding: 10px 35px 0px 0px;
+      line-height: 30px;
+      margin-right: 50px;
+
+      @media (max-width: 768px) {
+        display: none;
+      }
+
+      @media (max-width: 320px) {
+        display: none;
+      }
+    }
+  }
+}
