@@ -8,7 +8,11 @@ function catalogWrapper() {
         <h3 className="catalog-title">Series</h3>
         <div className="catalog-content-wrapper">
           <Link to="/series" className="catalog-content">
-            <img src="images/arrow.png" alt="" className="cover-images" />
+            <img
+              src="images/arrow.png"
+              alt="arrow-img"
+              className="cover-images"
+            />
           </Link>
           <a href="#" className="catalog-content">
             <img

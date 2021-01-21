@@ -1,5 +1,5 @@
 .cover-wrapper {
-  background-image: url(./black-summer.png);
+  background-image: url("../../assets/images/black-summer.png");
   background-size: cover;
 
   @media (max-width: 768px) {
@@ -159,7 +159,7 @@
         }
 
         &:hover {
-          background-color: slategray;
+          background-color: darkgray;
         }
 
         &:first-of-type:hover {

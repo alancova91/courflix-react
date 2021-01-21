@@ -4,7 +4,6 @@
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.8);
-    border-bottom: 1px solid #fafafa;
     margin-top: 14px;
   }
 
@@ -12,7 +11,7 @@
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.8);
-    border-bottom: 1px solid #fafafa;
+
     margin-top: 0px;
   }
 
@@ -26,6 +25,7 @@
 
     @media (max-width: 1024px) {
       margin: 0 35px;
+      /*border-bottom: 1px solid white;*/
     }
 
     @media (max-width: 768px) {
@@ -37,7 +37,7 @@
     line-height: 1.6rem;
     padding: 10px 0px;
     @media (max-width: 768px) {
-      padding: 22.5px 0px;
+      padding: 10px 0px;
     }
     @media (max-width: 1024px) {
       padding: 22.5px 0px;
