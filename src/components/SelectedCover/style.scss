@@ -1,5 +1,5 @@
 .selected-cover-wrapper {
-  background-image: url(./arrow-background-4.jpg);
+  background-image: url("../../assets/images/arrow-background-4.jpg");
   background-position: top;
   background-size: cover;
 
@@ -28,7 +28,7 @@
     @media (max-width: 320px) {
       color: #fff;
       padding: 0 0 0 15px;
-      min-height: 250px;
+      min-height: 350px;
     }
 
     .logo-arrow {

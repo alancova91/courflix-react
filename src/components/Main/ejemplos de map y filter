@@ -1,0 +1,69 @@
+{data.series.map((e).filter(e) => {
+            return <h1 className="content-title">{e.title}</h1>;
+          })}
+
+
+{data.series.map((e, key) => {
+            return (
+              <p className="content-description" key={key}>
+                {e.description}
+              </p>
+            );
+          })}
+
+
+filter((item) => item.title == "ARROW")
+    .map((item) => item.title);
+
+
+
+                          Basada en las historietas de Flecha Verde, un próspero playboy se
+          transforma en un superhéroe que salva a la ciudad de villanos, armado
+          únicamente con un arco y flechas.
+
+
+  const title = data.series
+    .filter((item) => item.title == "BLACK SUMMER")
+    .map((item) => item.title);
+
+  const descript = data.series
+    .filter((item) => item.title.toLowerCase() == "black summer")
+    .map((item) => item.description);
+
+
+
+     const callTitle = data.series.filter(
+    (item) => item.title.toLowerCase() == ""
+  );
+
+  const llamameatodos = callTitle.map((item) => item.image);
+
+
+   <a href="#" className="catalog-content">
+            <img src={llamameatodos} alt="" className="cover-images" />
+          </a>
+          <a href="#" className="catalog-content">
+            <img src="images/protector.png" alt="" className="cover-images" />
+          </a>
+          <a href="#" className="catalog-content">
+            <img src="images/dark.png" alt="" className="cover-images" />
+          </a>
+          <a href="#" className="catalog-content">
+            <img
+              src="images/sevendeadlysins.png"
+              alt=""
+              className="cover-images"
+            />
+          </a>
+          <a href="#" className="catalog-content">
+            <img src="images/flash.png" alt="" className="cover-images" />
+          </a>
+
+
+       const catalogImages = data.series.slice(2, 7).map((item) => {
+    return (
+      <a href="#" className="catalog-content">
+        <img src={item.image} alt="" className="cover-images" />
+      </a>
+    );
+  });     

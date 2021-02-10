@@ -1,0 +1,251 @@
+ <div className="catalog-content-wrapper">
+          <Link to="/series" className="catalog-content">
+            <img
+              src="images/arrow.png"
+              alt="arrow-img"
+              className="cover-images"
+            />
+          </Link>
+          <a href="#" className="catalog-content">
+            <img
+              src="images/sevendeadlysins.png"
+              alt=""
+              className="cover-images"
+            />
+          </a>
+          <a href="#" className="catalog-content">
+            <img src="images/dark.png" alt="" className="cover-images" />
+          </a>
+          <a href="#" className="catalog-content">
+            <img src="images/vikings.png" alt="" className="cover-images" />
+          </a>
+          <a href="#" className="catalog-content">
+            <img src="images/flash.png" alt="" className="cover-images" />
+          </a>
+          <a href="#" className="catalog-content">
+            <img src="images/protector.png" alt="" className="cover-images" />
+          </a>
+          <a href="#" className="catalog-content">
+            <img
+              src="public/images/arrow.png"
+              alt=""
+              className="cover-images"
+            />
+          </a>
+        </div>
+        <h3 className="catalog-title">Seguir viendo contenido de Alan</h3>
+        <div className="catalog-content-wrapper">
+          <div className="asdf">
+            <a href="serie.html" className="catalog-content">
+              <img src="images/arrow.png" alt="" className="cover-images" />
+            </a>
+            <div className="progress-bar">
+              <div className="progress" style={{ width: "20%" }}></div>
+            </div>
+          </div>
+          <div className="asdf">
+            <a href="#" className="catalog-content">
+              <img src="images/flash.png" alt="" className="cover-images" />
+            </a>
+            <div className="progress-bar">
+              <div className="progress" style={{ width: "40%" }}></div>
+            </div>
+          </div>
+          <div className="asdf">
+            <a href="#" className="catalog-content">
+              <img src="images/dark.png" alt="" className="cover-images" />
+            </a>
+            <div className="progress-bar">
+              <div className="progress" style={{ width: "70%" }}></div>
+            </div>
+          </div>
+          <div className="asdf">
+            <a href="#" className="catalog-content">
+              <img
+                src="images/sevendeadlysins.png"
+                alt=""
+                className="cover-images"
+              />
+            </a>
+            <div className="progress-bar">
+              <div className="progress" style={{ width: "70%" }}></div>
+            </div>
+          </div>
+        </div>
+
+        <h3 className="catalog-title">Agregados recientemente</h3>
+        <div className="catalog-content-wrapper">
+          <a href="#" className="catalog-content">
+            <img src="images/vikings.png" alt="" className="cover-images" />
+          </a>
+          <a href="#" className="catalog-content">
+            <img src="images/protector.png" alt="" className="cover-images" />
+          </a>
+          <a href="#" className="catalog-content">
+            <img src="images/dark.png" alt="" className="cover-images" />
+          </a>
+          <a href="#" className="catalog-content">
+            <img
+              src="images/sevendeadlysins.png"
+              alt=""
+              className="cover-images"
+            />
+          </a>
+          <a href="#" className="catalog-content">
+            <img src="images/flash.png" alt="" className="cover-images" />
+          </a>
+        </div>
+
+
+
+  <img src="images/vikings.png" alt="" className="cover-images" />
+          </a>
+          <a href="#" className="catalog-content">
+            <img src="images/protector.png" alt="" className="cover-images" />
+          </a>
+          <a href="#" className="catalog-content">
+            <img src="images/dark.png" alt="" className="cover-images" />
+          </a>
+          <a href="#" className="catalog-content">
+            <img
+              src="images/sevendeadlysins.png"
+              alt=""
+              className="cover-images"
+            />
+          </a>
+          <a href="#" className="catalog-content">
+            <img src="images/flash.png" alt="" className="cover-images" /> 
+
+
+
+
+.catalog-wrapper {
+  background-color: black;
+
+  .catalog {
+    padding: 15px 85px 32px 60px;
+    @media (max-width: 1024px) {
+      padding: 20px 25px 32px 35px;
+    }
+    @media (max-width: 768px) {
+      padding: 0px 0px 0px 15px;
+      margin-right: 0;
+    }
+    @media (max-width: 320px) {
+      padding: 0px 12px 5px 15px;
+      margin-right: 0px;
+    }
+
+    .catalog-title {
+      color: white;
+      font-weight: 600;
+      font-size: 1.3rem;
+      margin: 0px 0px 25px 0;
+
+      @media (max-width: 768px) {
+        margin: 0px 0px 25px 0px;
+        font-size: 1.1rem;
+      }
+
+      @media (max-width: 320px) {
+        margin: 0px 0 15px 0;
+        font-size: 1.1rem;
+      }
+
+      &:first-of-type {
+        margin-top: 10px;
+
+        @media (max-width: 768px) {
+          margin: 15px 0;
+        }
+        @media (max-width: 320px) {
+          margin-top: 15px;
+          padding-top: 0px;
+        }
+      }
+    }
+
+    .catalog-content-wrapper {
+      overflow-x: auto;
+      display: flex;
+      margin-bottom: 30px;
+
+      @media (max-width: 320px) {
+        margin-bottom: 20px;
+      }
+
+      .catalog-content {
+        margin-right: 12px;
+
+        .cover-images {
+          display: block;
+          width: 100%;
+          min-width: 340px;
+          @media (max-width: 320px) {
+            width: 80%;
+            min-width: 250px;
+          }
+          @media (max-width: 768px) {
+            width: 80%;
+            min-width: 250px;
+          }
+        }
+      }
+
+      .asdf {
+        margin-right: 15px;
+        display: flex;
+        flex-direction: column;
+
+        .catalog-content {
+          margin: 0 0 12px 0;
+          @media (max-width: 320px) {
+            min-width: 125px;
+            overflow-x: auto;
+          }
+
+          &:last-of-type {
+            padding-right: 0px;
+          }
+
+          .cover-image {
+            display: block;
+            width: 100%;
+            min-width: 340px;
+
+            @media (max-width: 320px) {
+              width: 80%;
+              min-width: 250px;
+            }
+            @media (max-width: 768px) {
+              width: 80%;
+              min-width: 250px;
+            }
+          }
+        }
+
+        .progress-bar {
+          background-color: grey;
+          height: 7px;
+          width: 70%;
+          margin: 0 auto;
+          @media (max-width: 320px) {
+            height: 5px;
+          }
+          .progress {
+            background-color: red;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+

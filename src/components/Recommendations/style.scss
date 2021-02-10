@@ -12,11 +12,26 @@
     margin: 15px 0px 20px 15px;
     font-size: 1.1rem;
   }
+
+  @media (max-width: 425px) {
+    margin: 20px 0px 20px 15px;
+    font-size: 1.1rem;
+  }
+
+  @media (max-width: 375px) {
+    margin: 20px 0px 20px 15px;
+    font-size: 1.1rem;
+  }
+
+  @media (max-width: 320px) {
+    margin: 15px 0;
+    font-size: 1rem;
+  }
 }
 
 .recommendations-content-wrapper {
-  overflow-x: auto;
   display: flex;
+  flex-direction: column;
   margin: 0 70px 30px 60px;
 
   @media (max-width: 1024px) {
@@ -28,18 +43,28 @@
 
   .catalog-content {
     margin-right: 12px;
+    max-width: 340px;
 
-    .cover-image {
-      display: block;
-      width: 100%;
-      min-width: 340px;
-      @media (max-width: 320px) {
-        width: 80%;
-        min-width: 250px;
+    .cover-images {
+      max-width: 340px;
+
+      @media (max-width: 1440px) {
+        max-width: 300px;
       }
+
       @media (max-width: 768px) {
-        width: 80%;
-        min-width: 250px;
+        max-width: 240px;
+      }
+
+      @media (max-width: 425px) {
+        max-width: 190px;
+      }
+
+      @media (max-width: 375px) {
+        max-width: 170px;
+      }
+      @media (max-width: 320px) {
+        max-width: 140px;
       }
     }
   }
