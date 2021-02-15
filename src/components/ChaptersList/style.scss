@@ -24,9 +24,12 @@
     .chapter-content-wrapper {
       display: flex;
       max-width: 320px;
+      margin-bottom: 20px;
 
       @media (min-width: 769px) {
-        max-width: 700px;
+        max-width: 840px;
+        margin-bottom: 50px;
+        height: 140px;
       }
 
       .episode-content {
@@ -45,6 +48,7 @@
           @media (min-width: 769px) {
             width: 250px;
             height: auto;
+            max-height: 140px;
             margin-right: 10px;
           }
         }
@@ -70,7 +74,7 @@
           line-height: 25px;
           font-size: 1rem;
           @media (min-width: 769px) {
-            font-size: 1.13rem;
+            font-size: 1.12rem;
             text-align: justify;
           }
         }

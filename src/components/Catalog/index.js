@@ -1,104 +1,107 @@
 import { Link } from "react-router-dom";
 import "./style.scss";
+import data from "../../data/seriesData.json";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function catalogWrapper() {
+  const settings = {
+    dots: false,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 6,
+    slidesToScroll: 2,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1441,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 3,
+          infinite: false,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 2,
+          infinite: false,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2.5,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 425,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 320,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: false,
+        },
+      },
+    ],
+  };
+
+  const catalogImages2 = data.series.map((item) => {
+    return (
+      <div className="content-and-progress">
+        <a href="#" className="catalog-content">
+          <img src={item.image} alt="" className="cover-images" />
+        </a>
+        <div className="progress-bar">
+          <div className="progress" style={{ width: item.progress }}></div>
+        </div>
+      </div> /*falta lograr que sea un progress por imagen*/
+    );
+  });
+
+  const catalogImages = data.series.map((item) => {
+    return (
+      <a href="#" className="catalog-content">
+        <img src={item.image} alt="" className="cover-images2" />
+      </a>
+
+      /*falta lograr que sea un progress por imagen*/
+    );
+  });
+
   return (
     <div className="catalog-wrapper">
       <section className="catalog">
         <h3 className="catalog-title">Series</h3>
-        <div className="catalog-content-wrapper">
+        <Slider {...settings}>
           <Link to="/series" className="catalog-content">
             <img
               src="images/arrow.png"
               alt="arrow-img"
-              className="cover-images"
+              className="cover-images2"
             />
           </Link>
-          <a href="#" className="catalog-content">
-            <img
-              src="images/sevendeadlysins.png"
-              alt=""
-              className="cover-images"
-            />
-          </a>
-          <a href="#" className="catalog-content">
-            <img src="images/dark.png" alt="" className="cover-images" />
-          </a>
-          <a href="#" className="catalog-content">
-            <img src="images/vikings.png" alt="" className="cover-images" />
-          </a>
-          <a href="#" className="catalog-content">
-            <img src="images/flash.png" alt="" className="cover-images" />
-          </a>
-          <a href="#" className="catalog-content">
-            <img src="images/protector.png" alt="" className="cover-images" />
-          </a>
-          <a href="#" className="catalog-content">
-            <img src="images/arrow.png" alt="" className="cover-images" />
-          </a>
-        </div>
+          {catalogImages.slice(2, 10)}
+        </Slider>
         <h3 className="catalog-title">Seguir viendo contenido de Alan</h3>
         <div className="catalog-content-wrapper">
-          <div className="asdf">
-            <a href="serie.html" className="catalog-content">
-              <img src="images/arrow.png" alt="" className="cover-images" />
-            </a>
-            <div className="progress-bar">
-              <div className="progress" style={{ width: "20%" }}></div>
-            </div>
-          </div>
-          <div className="asdf">
-            <a href="#" className="catalog-content">
-              <img src="images/flash.png" alt="" className="cover-images" />
-            </a>
-            <div className="progress-bar">
-              <div className="progress" style={{ width: "40%" }}></div>
-            </div>
-          </div>
-          <div className="asdf">
-            <a href="#" className="catalog-content">
-              <img src="images/dark.png" alt="" className="cover-images" />
-            </a>
-            <div className="progress-bar">
-              <div className="progress" style={{ width: "70%" }}></div>
-            </div>
-          </div>
-          <div className="asdf">
-            <a href="#" className="catalog-content">
-              <img
-                src="images/sevendeadlysins.png"
-                alt=""
-                className="cover-images"
-              />
-            </a>
-            <div className="progress-bar">
-              <div className="progress" style={{ width: "70%" }}></div>
-            </div>
-          </div>
+          <Slider {...settings}> {catalogImages2.slice(2, 7)}</Slider>
         </div>
-
         <h3 className="catalog-title">Agregados recientemente</h3>
-        <div className="catalog-content-wrapper">
-          <a href="#" className="catalog-content">
-            <img src="images/vikings.png" alt="" className="cover-images" />
-          </a>
-          <a href="#" className="catalog-content">
-            <img src="images/protector.png" alt="" className="cover-images" />
-          </a>
-          <a href="#" className="catalog-content">
-            <img src="images/dark.png" alt="" className="cover-images" />
-          </a>
-          <a href="#" className="catalog-content">
-            <img
-              src="images/sevendeadlysins.png"
-              alt=""
-              className="cover-images"
-            />
-          </a>
-          <a href="#" className="catalog-content">
-            <img src="images/flash.png" alt="" className="cover-images" />
-          </a>
-        </div>
+        <Slider {...settings}>{catalogImages.slice(2, 10).reverse()}</Slider>
       </section>
     </div>
   );

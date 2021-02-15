@@ -1,5 +1,5 @@
 .selected-cover-wrapper {
-  background-image: url(./arrow-background-4.jpg);
+  background-image: url("../../assets/images/arrow-background-4.jpg");
   background-position: top;
   background-size: cover;
 
@@ -14,6 +14,7 @@
 
     @media (max-width: 1024px) {
       padding: 0 0 30px 35px;
+      min-height: 70vh;
     }
 
     @media (max-width: 768px) {
@@ -22,24 +23,37 @@
       width: 100%;
       max-width: 425px;
       height: auto;
-      min-height: 300px;
+      min-height: 400px; /*chequear si queda final o no*/
+    }
+
+    @media (max-width: 425px) {
+      min-height: 375px;
+    }
+
+    @media (max-width: 375px) {
+      min-height: 330px;
     }
 
     @media (max-width: 320px) {
       color: #fff;
       padding: 0 0 0 15px;
-      min-height: 250px;
+      min-height: 300px;
     }
 
     .logo-arrow {
       width: 400px;
       padding-bottom: 25px;
 
-      @media (max-width: 320px) {
-        display: none;
+      @media (max-width: 1024px) {
+        width: 300px;
       }
 
       @media (max-width: 768px) {
+        width: 220px;
+        padding-bottom: 25px;
+      }
+
+      @media (max-width: 375px) {
         display: none;
       }
     }
@@ -47,15 +61,16 @@
     .selected-title {
       display: none;
 
-      @media (max-width: 320px) {
-        display: inline-block;
+      @media (max-width: 768px) {
+        /*display: inline-block;
         color: white;
         font-size: 1.5rem;
         font-weight: bold;
-        line-height: 30px;
+        line-height: 30px;*/
+        display: none;
       }
 
-      @media (max-width: 768px) {
+      @media (max-width: 375px) {
         display: inline-block;
         color: white;
         font-size: 1.5rem;
@@ -68,12 +83,18 @@
       display: flex;
       margin-bottom: 45px;
 
-      @media (max-width: 320px) {
+      @media (max-width: 1024px) {
         display: flex;
-        margin-bottom: 0px;
+        margin-bottom: 30px;
       }
 
       @media (max-width: 768px) {
+        display: flex;
+        margin-left: 5px;
+        margin-bottom: 0px;
+      }
+
+      @media (max-width: 320px) {
         display: flex;
         margin-bottom: 0px;
       }
@@ -189,6 +210,10 @@
       padding: 10px 35px 0px 0px;
       line-height: 30px;
       margin-right: 50px;
+
+      @media (max-width: 1024px) {
+        padding: 0px 35px 0px 0px;
+      }
 
       @media (max-width: 768px) {
         display: none;

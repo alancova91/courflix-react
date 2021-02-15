@@ -1,7 +1,16 @@
 import "./style.scss";
 import { Link } from "react-router-dom";
+import data from "../../data/seriesData.json";
 
 function SelectedCover() {
+  const callTitle = data.series.filter(
+    (item) => item.title.toLowerCase() == "arrow"
+  );
+
+  const title = callTitle.map((item) => item.title);
+
+  const plot = callTitle.map((item) => item.description);
+
   return (
     <div className="selected-cover-wrapper">
       <div className="series-content-wrapper">
@@ -10,7 +19,7 @@ function SelectedCover() {
           alt=""
           className="logo-arrow"
         />
-        <p className="selected-title">ARROW</p>
+        <p className="selected-title">{title}</p>
         <div className="series-info">
           <p className="info" id="display-none">
             95% de coincidencia
@@ -35,11 +44,7 @@ function SelectedCover() {
           </a>
         </div>
 
-        <p className="content-description">
-          Basada en las historietas de Flecha Verde, un próspero playboy se
-          transforma en un superhéroe que salva a la ciudad de villanos, armado
-          únicamente con un arco y flechas.
-        </p>
+        <p className="content-description">{plot}</p>
       </div>
     </div>
   );

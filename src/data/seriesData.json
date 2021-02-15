@@ -1,0 +1,59 @@
+{
+    "series": 
+    [{
+    "title": "BLACK SUMMER", 
+    "image": "images/black-summer.png",
+    "progress": "60%",
+    "description":"Una ansiada luna de miel. Un asesinato terrible. Varios sospechosos. Si sobreviven, serán unas vacaciones de ensueño.", 
+    "seasons": {"1": [{"title": "Episode 1"}, {"title": "Episode 2"}]
+  }}, {
+    "title": "ARROW", 
+    "image": "images/arrow.png", 
+    "progress": "40%",
+    "description":"Basada en las historietas de Flecha Verde, un próspero playboy se transforma en un superhéroe que salva a la ciudad de villanos, armado únicamente con un arco y flechas.", 
+    "seasons": {"1": [{"title": "1.Piloto", "episodeImg": "images/arrow-ep01.jpg", "plot": "Supuestamente muerto por cinco años antes de que lo descubrieran en una isla del Pacífico, el multimillonario playboy Oliver Queen vuelve a casa como un hombre distinto."}, {"title": "2. Honra a tu padre", "episodeImg": "images/arrow-ep02.jpg", "plot": "Oliver pone su mira en derrotar a un criminal relacionado con la tríada china: Martin Somers, a quien Laurel está demandando." }, {"title": "3. Pistoleros Solitarios", "episodeImg": "images/arrow-ep03.jpg", "plot": "Cuando un pistolero mata a uno de los objetivos de Oliver, él solicita la ayuda de la detective Lance." }]
+    }}, {
+    "title": "The Seven Deadly Sins", 
+    "image": "images/sevendeadlysins.png", 
+    "progress": "60%",
+    "description":"",
+    "seasons": {"1": [{"title": "1.Piloto", "episodeImg": ""}, {"title": ""}]
+    }}, {
+    "title": "The Flash", 
+    "image": "images/flash.png", 
+    "progress": "80%",
+    "description":"",
+    "seasons": {"1": [{"title": "1.Piloto", "episodeImg": ""}, {"title": "2. Honra a tu padre"}]
+      }}, {
+    "title": "Dark", 
+    "image": "images/dark.png", 
+    "progress": "60%",
+    "description":"",
+    "seasons": {"1": [{"title": "", "episodeImg": ""}, {"title": ""}]
+    }}, {
+    "title": "Protector", 
+    "image": "images/protector.png", 
+    "progress": "40%",
+    "description":"",
+    "seasons": {"1": [{"title": "1.Piloto", "episodeImg": ""}, {"title": ""}]
+    }}, {
+    "title": "Vikings", 
+    "image": "images/vikings.png", 
+    "progress": "20%",
+    "description":"",
+    "seasons": {"1": [{"title": "", "episodeImg": ""}, {"title": ""}]
+    }}, {
+    "title": "Peaky Blinders", 
+    "image": "images/peaky.jpg", 
+    "progress": "20%",
+    "description":"1919. Inglaterra. Thomas Shelby lidera una conocida banda de Birmingham que avanza con ferocidad por el bajo mundo.",
+    "seasons": {"1": [{"title": "", "episodeImg": ""}, {"title": ""}] 
+    }}, {
+    "title": "Arrested Development", 
+    "image": "images/arrested.jpg", 
+    "progress": "20%",
+    "description":"Esta es la historia de una familia rica que perdió todo, y el hijo que no tuvo otra opción que mantenerla unida. Esto es Arrested Development.",
+    "seasons": {"1": [{"title": "", "episodeImg": ""}, {"title": ""}] 
+    }} ]
+}
+

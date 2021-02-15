@@ -5,41 +5,78 @@
   margin: 25px 0px 25px 60px;
 
   @media (max-width: 1024px) {
-    margin: 25px 0px 25px 35px;
+    margin: 30px 0px 30px 35px;
   }
 
   @media (max-width: 768px) {
-    margin: 15px 0px 20px 15px;
+    margin: 20px 0px 20px 15px;
     font-size: 1.1rem;
+  }
+
+  @media (max-width: 425px) {
+    margin: 20px 0px 20px 15px;
+    font-size: 1.1rem;
+  }
+
+  @media (max-width: 375px) {
+    margin: 20px 0px 20px 15px;
+    font-size: 1.1rem;
+  }
+
+  @media (max-width: 320px) {
+    margin: 15px 15px;
+    font-size: 1rem;
   }
 }
 
 .recommendations-content-wrapper {
-  overflow-x: auto;
   display: flex;
+  flex-direction: column;
   margin: 0 70px 30px 60px;
 
   @media (max-width: 1024px) {
     margin: 0px 10px 30px 35px;
   }
   @media (max-width: 768px) {
-    margin: 0 5px 30px 15px;
+    margin: 0 5px 0px 15px;
+  }
+  @media (max-width: 320px) {
+    margin: 0 5px 0px 15px;
   }
 
   .catalog-content {
-    margin-right: 12px;
+    max-width: 340px;
+    @media (max-width: 768px) {
+      max-width: 300px;
+    }
 
-    .cover-image {
-      display: block;
-      width: 100%;
-      min-width: 340px;
-      @media (max-width: 320px) {
-        width: 80%;
-        min-width: 250px;
+    .cover-images {
+      max-width: 290px; /*pasa de 5 a 6 cuadros*/
+
+      @media (max-width: 1440px) {
+        max-width: 255px;
       }
+
+      @media (max-width: 1024px) {
+        max-width: 240px; /*porque cambia de 3 cuadrados a 4*/
+      }
+
       @media (max-width: 768px) {
-        width: 80%;
-        min-width: 250px;
+        /*revisar desde 768px*/
+        max-width: 240px;
+      }
+
+      /*de aca para abajo todo bien*/
+
+      @media (max-width: 425px) {
+        max-width: 190px;
+      }
+
+      @media (max-width: 375px) {
+        max-width: 170px;
+      }
+      @media (max-width: 320px) {
+        max-width: 140px;
       }
     }
   }

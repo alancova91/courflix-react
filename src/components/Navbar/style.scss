@@ -36,11 +36,11 @@
   #no-separation {
     line-height: 1.6rem;
     padding: 10px 0px;
-    @media (max-width: 768px) {
-      padding: 10px 0px;
-    }
     @media (max-width: 1024px) {
       padding: 22.5px 0px;
+    }
+    @media (max-width: 768px) {
+      padding: 10px 0px;
     }
   }
 }
