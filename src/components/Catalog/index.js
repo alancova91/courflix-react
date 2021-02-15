@@ -10,22 +10,14 @@ function catalogWrapper() {
     dots: false,
     infinite: false,
     speed: 500,
-<<<<<<< HEAD
     slidesToShow: 6,
-=======
-    slidesToShow: 5,
->>>>>>> 073400713bf140f6ca177594860e83ab66ac9bb5
     slidesToScroll: 2,
     initialSlide: 0,
     responsive: [
       {
         breakpoint: 1441,
         settings: {
-<<<<<<< HEAD
           slidesToShow: 5,
-=======
-          slidesToShow: 4,
->>>>>>> 073400713bf140f6ca177594860e83ab66ac9bb5
           slidesToScroll: 3,
           infinite: false,
           dots: true,
@@ -34,11 +26,7 @@ function catalogWrapper() {
       {
         breakpoint: 1024,
         settings: {
-<<<<<<< HEAD
           slidesToShow: 4,
-=======
-          slidesToShow: 3,
->>>>>>> 073400713bf140f6ca177594860e83ab66ac9bb5
           slidesToScroll: 2,
           infinite: false,
           arrows: false,
@@ -71,44 +59,27 @@ function catalogWrapper() {
     ],
   };
 
-<<<<<<< HEAD
   const catalogImages2 = data.series.map((item) => {
-=======
-  const progressBar = data.series.map((item) => {
-    return <div className="progress" style={{ width: item.progress }}></div>;
-  });
-
-  const catalogImages = data.series.map((item) => {
->>>>>>> 073400713bf140f6ca177594860e83ab66ac9bb5
     return (
       <div className="content-and-progress">
         <a href="#" className="catalog-content">
           <img src={item.image} alt="" className="cover-images" />
         </a>
-<<<<<<< HEAD
         <div className="progress-bar">
           <div className="progress" style={{ width: item.progress }}></div>
         </div>
-=======
-        <div className="progress-bar">{}</div>
->>>>>>> 073400713bf140f6ca177594860e83ab66ac9bb5
-      </div> /*falta lograr que sea un progress por imagen*/
+      </div> /*no quedan centradas las imagenes cuando son menos de las que estipula el carrousel*/
     );
   });
 
-<<<<<<< HEAD
   const catalogImages = data.series.map((item) => {
     return (
       <a href="#" className="catalog-content">
         <img src={item.image} alt="" className="cover-images2" />
       </a>
-
-      /*falta lograr que sea un progress por imagen*/
     );
   });
 
-=======
->>>>>>> 073400713bf140f6ca177594860e83ab66ac9bb5
   return (
     <div className="catalog-wrapper">
       <section className="catalog">
@@ -121,7 +92,6 @@ function catalogWrapper() {
               className="cover-images2"
             />
           </Link>
-<<<<<<< HEAD
           {catalogImages.slice(2, 10)}
         </Slider>
         <h3 className="catalog-title">Seguir viendo contenido de Alan</h3>
@@ -130,16 +100,6 @@ function catalogWrapper() {
         </div>
         <h3 className="catalog-title">Agregados recientemente</h3>
         <Slider {...settings}>{catalogImages.slice(2, 10).reverse()}</Slider>
-=======
-          {catalogImages.slice(2, 7)}
-        </Slider>
-        <h3 className="catalog-title">Seguir viendo contenido de Alan</h3>
-        <div className="catalog-content-wrapper">
-          {catalogImages.slice(2, 3)}
-        </div>
-        <h3 className="catalog-title">Agregados recientemente</h3>
-        <Slider {...settings}>{catalogImages.slice(2, 8)}</Slider>
->>>>>>> 073400713bf140f6ca177594860e83ab66ac9bb5
       </section>
     </div>
   );

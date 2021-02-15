@@ -24,11 +24,7 @@
   }
 
   @media (max-width: 320px) {
-<<<<<<< HEAD
     margin: 15px 15px;
-=======
-    margin: 15px 0;
->>>>>>> 073400713bf140f6ca177594860e83ab66ac9bb5
     font-size: 1rem;
   }
 }
@@ -49,7 +45,6 @@
   }
 
   .catalog-content {
-<<<<<<< HEAD
     max-width: 340px;
     @media (max-width: 768px) {
       max-width: 300px;
@@ -73,22 +68,6 @@
 
       /*de aca para abajo todo bien*/
 
-=======
-    margin-right: 12px;
-    max-width: 340px;
-
-    .cover-images {
-      max-width: 340px;
-
-      @media (max-width: 1440px) {
-        max-width: 300px;
-      }
-
-      @media (max-width: 768px) {
-        max-width: 240px;
-      }
-
->>>>>>> 073400713bf140f6ca177594860e83ab66ac9bb5
       @media (max-width: 425px) {
         max-width: 190px;
       }
