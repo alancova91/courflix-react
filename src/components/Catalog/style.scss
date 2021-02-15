@@ -48,12 +48,21 @@
         margin: 20px 0px;
         font-size: 1rem;
       }
+<<<<<<< HEAD
 
       @media (max-width: 320px) {
         margin: 15px 0;
         font-size: 1rem;
       }
 
+=======
+
+      @media (max-width: 320px) {
+        margin: 15px 0;
+        font-size: 1rem;
+      }
+
+>>>>>>> 073400713bf140f6ca177594860e83ab66ac9bb5
       &:first-of-type {
         @media (max-width: 768px) {
           margin: 25px 0;
@@ -78,13 +87,18 @@
 
     .catalog-content-wrapper {
       display: flex;
+<<<<<<< HEAD
       flex-direction: column;
+=======
+      flex-direction: row;
+>>>>>>> 073400713bf140f6ca177594860e83ab66ac9bb5
 
       @media (max-width: 320px) {
         margin-bottom: 20px;
       }
 
       .content-and-progress {
+<<<<<<< HEAD
         margin-right: 3px;
         @media (max-width: 1440px) {
           margin-right: 10px;
@@ -105,6 +119,9 @@
         @media (max-width: 320px) {
           margin-right: 7px;
         }
+=======
+        margin-right: 15px;
+>>>>>>> 073400713bf140f6ca177594860e83ab66ac9bb5
 
         .catalog-content {
           margin: 0 0 12px 0;
@@ -119,6 +136,7 @@
 
           .cover-images {
             display: block;
+<<<<<<< HEAD
             margin-bottom: 10px;
             max-width: 290px;
 
@@ -151,6 +169,30 @@
             @media (max-width: 320px) {
               max-width: 140px;
               margin-right: 0px;
+=======
+            width: 100%;
+            min-width: 340px;
+            margin-bottom: 10px;
+
+            @media (max-width: 1440px) {
+              min-width: 300px;
+            }
+
+            @media (max-width: 768px) {
+              min-width: 240px;
+            }
+
+            @media (max-width: 425px) {
+              min-width: 190px;
+            }
+
+            @media (max-width: 375px) {
+              min-width: 170px;
+            }
+
+            @media (max-width: 320px) {
+              min-width: 140px;
+>>>>>>> 073400713bf140f6ca177594860e83ab66ac9bb5
             }
           }
         }
@@ -177,6 +219,7 @@
       }
     }
 
+<<<<<<< HEAD
     .cover-images2 {
       max-width: 290px;
 
@@ -190,6 +233,13 @@
 
       @media (max-width: 1024px) {
         max-width: 235px;
+=======
+    .cover-images {
+      max-width: 340px;
+
+      @media (max-width: 1440px) {
+        max-width: 300px;
+>>>>>>> 073400713bf140f6ca177594860e83ab66ac9bb5
       }
 
       @media (max-width: 768px) {
