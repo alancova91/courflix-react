@@ -32,16 +32,16 @@
 .recommendations-content-wrapper {
   display: flex;
   flex-direction: column;
-  margin: 0 70px 30px 60px;
+  padding: 0 70px 30px 60px;
 
   @media (max-width: 1024px) {
-    margin: 0px 10px 30px 35px;
+    padding: 0px 35px 10px 35px;
   }
   @media (max-width: 768px) {
-    margin: 0 5px 0px 15px;
+    padding: 0 15px 0px 15px;
   }
   @media (max-width: 320px) {
-    margin: 0 5px 0px 15px;
+    padding: 0 15px 0px 15px;
   }
 
   .catalog-content {
@@ -51,22 +51,19 @@
     }
 
     .cover-images {
-      max-width: 290px; /*pasa de 5 a 6 cuadros*/
-
+      max-width: 290px;
+      width: 99%;
       @media (max-width: 1440px) {
         max-width: 255px;
       }
 
       @media (max-width: 1024px) {
-        max-width: 240px; /*porque cambia de 3 cuadrados a 4*/
-      }
-
-      @media (max-width: 768px) {
-        /*revisar desde 768px*/
         max-width: 240px;
       }
 
-      /*de aca para abajo todo bien*/
+      @media (max-width: 768px) {
+        max-width: 240px;
+      }
 
       @media (max-width: 425px) {
         max-width: 190px;

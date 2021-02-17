@@ -57,7 +57,7 @@
     }
 
     .original-advise {
-      font-size: 1.75rem;
+      font-size: 1.6rem;
       font-weight: bold;
       margin-bottom: 20px;
 
@@ -76,6 +76,10 @@
       margin-bottom: 15px;
       line-height: 100px;
       display: inline;
+
+      @media (max-width: 1024px) {
+        font-size: 6.5rem;
+      }
 
       @media (max-width: 768px) {
         color: white;
@@ -208,6 +212,10 @@
       padding: 15px 35px 0px 0px;
       line-height: 30px;
       margin-right: 50px;
+
+      @media (max-width: 1024px) {
+        font-size: 1.1rem;
+      }
       @media (max-width: 768px) {
         display: none;
       }

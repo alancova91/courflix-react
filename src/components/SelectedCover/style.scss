@@ -12,9 +12,14 @@
     flex-direction: column;
     justify-content: flex-end;
 
+    @media (max-width: 1440px) {
+      padding: 160px 0 30px 60px;
+      min-height: 70vh;
+    }
+
     @media (max-width: 1024px) {
       padding: 0 0 30px 35px;
-      min-height: 70vh;
+      min-height: 50vh;
     }
 
     @media (max-width: 768px) {
@@ -23,7 +28,7 @@
       width: 100%;
       max-width: 425px;
       height: auto;
-      min-height: 400px; /*chequear si queda final o no*/
+      min-height: 400px;
     }
 
     @media (max-width: 425px) {
@@ -213,6 +218,7 @@
 
       @media (max-width: 1024px) {
         padding: 0px 35px 0px 0px;
+        font-size: 1.1rem;
       }
 
       @media (max-width: 768px) {

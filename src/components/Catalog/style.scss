@@ -4,7 +4,7 @@
   .catalog {
     padding: 0px 85px 32px 60px;
     @media (max-width: 1024px) {
-      padding: 20px 25px 32px 35px;
+      padding: 0px 30px 32px 35px;
     }
     @media (max-width: 768px) {
       padding: 0px 15px 15px 15px;
@@ -13,18 +13,18 @@
 
     @media (max-width: 425px) {
       min-width: 170px;
-      padding: 0px 0px 20px 15px;
+      padding: 0px 20px 20px 15px;
       margin-right: 0;
     }
 
     @media (max-width: 375px) {
       min-width: 170px;
-      padding: 0px 0px 15px 15px;
+      padding: 0px 10px 15px 15px;
       margin-right: 0;
     }
 
     @media (max-width: 320px) {
-      padding: 0px 12px 15px 15px;
+      padding: 0px 15px 15px 15px;
       margin-right: 0px;
     }
 
@@ -33,6 +33,10 @@
       font-weight: 600;
       font-size: 1.3rem;
       margin: 25px 0px 25px 0;
+
+      @media (max-width: 1024px) {
+        font-size: 1.1rem;
+      }
 
       @media (max-width: 768px) {
         margin: 25px 0px 25px 0px;
@@ -79,9 +83,32 @@
     .catalog-content-wrapper {
       display: flex;
       flex-direction: column;
+      max-width: 1470px;
+      @media (max-width: 1440px) {
+        max-width: 1295px;
+      }
+
+      @media (max-width: 1366px) {
+        margin-right: 5px;
+      }
+      @media (max-width: 1024px) {
+        margin-right: 5px;
+        max-width: 954px;
+      }
+
+      @media (max-width: 425px) {
+        margin-right: 0px;
+        max-width: 400px;
+      }
+
+      @media (max-width: 375px) {
+        margin-right: 0px;
+      }
 
       @media (max-width: 320px) {
         margin-bottom: 20px;
+        margin-right: 0px;
+        max-width: 293px;
       }
 
       .content-and-progress {
@@ -121,6 +148,7 @@
             display: block;
             margin-bottom: 10px;
             max-width: 290px;
+            width: 98%;
 
             @media (max-width: 1440px) {
               max-width: 250px;
@@ -157,7 +185,7 @@
 
         .progress-bar {
           background-color: grey;
-          height: 7px;
+          height: 4px;
           width: 70%;
           margin: 0 auto;
           @media (max-width: 320px) {
@@ -172,6 +200,9 @@
     }
 
     .catalog-content {
+      @media (max-width: 425px) {
+        max-width: 190px;
+      }
       @media (max-width: 320px) {
         max-width: 130px;
       }
@@ -179,6 +210,7 @@
 
     .cover-images2 {
       max-width: 290px;
+      width: 98%;
 
       @media (max-width: 1440px) {
         max-width: 250px;

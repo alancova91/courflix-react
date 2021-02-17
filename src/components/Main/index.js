@@ -13,7 +13,7 @@ function Main() {
   return (
     <div className="cover-wrapper">
       <div className="cover-content-wrapper">
-        <h3 className="original-advise">Original de Netflix</h3>
+        <h3 className="original-advise">Original de Courflix</h3>
         <h1 className="content-title">{title}</h1>
         <div className="series-infos">
           <p className="info">2012</p>

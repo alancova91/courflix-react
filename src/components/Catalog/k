@@ -249,3 +249,7 @@
 
 
 
+{catalogImages2.slice(
+              Math.floor(Math.random(1) * catalogImages2.length),
+              11
+            )}

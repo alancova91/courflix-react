@@ -96,7 +96,9 @@ function catalogWrapper() {
         </Slider>
         <h3 className="catalog-title">Seguir viendo contenido de Alan</h3>
         <div className="catalog-content-wrapper">
-          <Slider {...settings}> {catalogImages2.slice(2, 7)}</Slider>
+          <Slider {...{ ...settings, slidesToShow: 5, arrows: false }}>
+            {catalogImages2.slice(2, 7)}
+          </Slider>
         </div>
         <h3 className="catalog-title">Agregados recientemente</h3>
         <Slider {...settings}>{catalogImages.slice(2, 10).reverse()}</Slider>

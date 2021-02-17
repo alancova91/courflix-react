@@ -28,7 +28,7 @@ function Recommendations() {
           slidesToShow: 5,
           slidesToScroll: 2,
           infinite: false,
-          dots: true,
+          dots: false,
         },
       },
       {
