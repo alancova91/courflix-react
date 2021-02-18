@@ -1,14 +1,14 @@
 import "../../reset.css";
 import "../Home/App.scss";
 import Navbar from "../../components/Navbar";
-import Main from "../../components/Main";
+import Hero from "../../components/Hero";
 import Catalog from "../../components/Catalog";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <Main />
+      <Hero />
       <Catalog />
     </div>
   );

@@ -63,7 +63,7 @@
       }
     }
 
-    .selected-title {
+    .selected-series-title {
       display: none;
 
       @media (max-width: 768px) {
@@ -126,7 +126,7 @@
       }
     }
 
-    .button-wrapper {
+    .action-wrapper {
       display: flex;
       @media (max-width: 768px) {
         padding: 15px 0px 35px 0;
@@ -210,7 +210,7 @@
       }
     }
 
-    .content-description {
+    .content-plot {
       font-size: 1.3rem;
       padding: 10px 35px 0px 0px;
       line-height: 30px;

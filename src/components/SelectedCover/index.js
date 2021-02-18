@@ -4,7 +4,7 @@ import data from "../../data/seriesData.json";
 
 function SelectedCover() {
   const callTitle = data.series.filter(
-    (item) => item.title.toLowerCase() == "arrow"
+    (item) => item.title.toLowerCase() === "arrow"
   );
 
   const title = callTitle.map((item) => item.title);
@@ -19,7 +19,7 @@ function SelectedCover() {
           alt=""
           className="logo-arrow"
         />
-        <p className="selected-title">{title}</p>
+        <p className="selected-series-title">{title}</p>
         <div className="series-info">
           <p className="info" id="display-none">
             95% de coincidencia
@@ -29,7 +29,7 @@ function SelectedCover() {
           <p className="info">7 temporadas</p>
         </div>
 
-        <div className="button-wrapper">
+        <div className="action-wrapper">
           <Link to="/chapters" className="action">
             Reproducir
           </Link>
@@ -43,8 +43,7 @@ function SelectedCover() {
             <img src="images/thumb-down.png" alt="thumb-down" />
           </a>
         </div>
-
-        <p className="content-description">{plot}</p>
+        <p className="content-plot">{plot}</p>
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import data from "../../data/seriesData.json";
 
 function Main() {
   const callTitle = data.series.filter(
-    (item) => item.title.toLowerCase() == "black summer"
+    (item) => item.title.toLowerCase() === "black summer"
   );
 
   const title = callTitle.map((item) => item.title);
@@ -15,7 +15,7 @@ function Main() {
       <div className="cover-content-wrapper">
         <h3 className="original-advise">Original de Courflix</h3>
         <h1 className="content-title">{title}</h1>
-        <div className="series-infos">
+        <div className="content-info">
           <p className="info">2012</p>
           <p className="info">16+</p>
           <p className="info">7 temporadas</p>
@@ -30,7 +30,7 @@ function Main() {
         </div>
         <p className="content-season">Ve la temporada 1</p>
         <>
-          <p className="content-description">{plot}</p>
+          <p className="content-plot">{plot}</p>
         </>
       </div>
     </div>

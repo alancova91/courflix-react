@@ -59,6 +59,14 @@ function catalogWrapper() {
     ],
   };
 
+  const catalogImages = data.series.map((item) => {
+    return (
+      <a href="#" className="catalog-content">
+        <img src={item.image} alt="" className="cover-images2" />
+      </a>
+    );
+  });
+
   const catalogImages2 = data.series.map((item) => {
     return (
       <div className="content-and-progress">
@@ -68,15 +76,7 @@ function catalogWrapper() {
         <div className="progress-bar">
           <div className="progress" style={{ width: item.progress }}></div>
         </div>
-      </div> /*no quedan centradas las imagenes cuando son menos de las que estipula el carrousel*/
-    );
-  });
-
-  const catalogImages = data.series.map((item) => {
-    return (
-      <a href="#" className="catalog-content">
-        <img src={item.image} alt="" className="cover-images2" />
-      </a>
+      </div>
     );
   });
 

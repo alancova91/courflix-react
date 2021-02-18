@@ -20,7 +20,7 @@
     }
   }
 
-  .catalogs {
+  .episodes-list {
     padding: 0px 22px 0px 20px;
 
     @media (min-width: 769px) {
@@ -31,7 +31,7 @@
       padding: 0px 10px 0px 60px;
     }
 
-    .chapter-content-wrapper {
+    .episodes-content-wrapper {
       display: flex;
       max-width: 320px;
       margin-bottom: 20px;
@@ -42,14 +42,14 @@
         height: 140px;
       }
 
-      .episode-content {
+      .episodes-links {
         max-width: 300px;
         height: 75px;
         @media (min-width: 769px) {
           min-width: 300px;
         }
 
-        .episodes-images {
+        .episode-image {
           display: block;
           width: 130px;
           height: 75px;
@@ -64,13 +64,13 @@
         }
       }
 
-      .ep-content {
+      .episode-content {
         height: auto;
         color: white;
         @media (min-width: 769px) {
           margin-left: 30px;
         }
-        .ep-title {
+        .episode-title {
           font-size: 1.2rem;
           margin-bottom: 10px;
 
@@ -80,7 +80,7 @@
           }
         }
 
-        .ep-plot {
+        .episode-plot {
           line-height: 25px;
           font-size: 1rem;
           @media (min-width: 769px) {
