@@ -1,5 +1,5 @@
 import "../../reset.css";
-import "../Series/style.scss";
+import "./style.scss";
 import Navbar from "../../components/Navbar";
 import Recommendations from "../../components/Recommendations";
 import SelectedCover from "../../components/SelectedCover";

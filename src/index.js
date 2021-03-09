@@ -12,10 +12,10 @@ ReactDOM.render(
     <Route exact path="/">
       <Home />
     </Route>
-    <Route path="/series">
+    <Route exact path="/series">
       <Series />
     </Route>
-    <Route path="/chapters">
+    <Route exact path="/chapters">
       <Chapters />
     </Route>
   </Router>,
