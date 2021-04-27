@@ -11,6 +11,12 @@ function SelectedCover() {
 
   const plot = callTitle.map((item) => item.description);
 
+  const year = callTitle.map((item) => item.year);
+
+  const calification = callTitle.map((item) => item.calification);
+
+  const seasons = callTitle.map((item) => item.numberOfSeasons);
+
   return (
     <div className="selected-cover-wrapper">
       <div className="series-content-wrapper">
@@ -24,9 +30,9 @@ function SelectedCover() {
           <p className="info" id="display-none">
             95% de coincidencia
           </p>
-          <p className="info">2012</p>
-          <p className="info">16+</p>
-          <p className="info">7 temporadas</p>
+          <p className="info">{year}</p>
+          <p className="info">{calification}</p>
+          <p className="info">{seasons}</p>
         </div>
 
         <div className="action-wrapper">

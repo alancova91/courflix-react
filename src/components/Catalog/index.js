@@ -61,9 +61,9 @@ function catalogWrapper() {
 
   const catalogImages = data.series.map((item) => {
     return (
-      <a href="#" className="catalog-content">
+      <Link to="/series" href="#" className="catalog-content">
         <img src={item.image} alt="" className="cover-images2" />
-      </a>
+      </Link>
     );
   });
 
@@ -84,16 +84,7 @@ function catalogWrapper() {
     <div className="catalog-wrapper">
       <section className="catalog">
         <h3 className="catalog-title">Series</h3>
-        <Slider {...settings}>
-          <Link to="/series" className="catalog-content">
-            <img
-              src="images/arrow.png"
-              alt="arrow-img"
-              className="cover-images2"
-            />
-          </Link>
-          {catalogImages.slice(2, 10)}
-        </Slider>
+        <Slider {...settings}>{catalogImages.slice(1, 10)}</Slider>
         <h3 className="catalog-title">Seguir viendo contenido de Alan</h3>
         <div className="catalog-content-wrapper">
           <Slider {...{ ...settings, slidesToShow: 5, arrows: false }}>

@@ -10,14 +10,18 @@ function Main() {
 
   const plot = callTitle.map((item) => item.description);
 
+  const year = callTitle.map((item) => item.year);
+
+  const calification = callTitle.map((item) => item.calification);
+
   return (
     <div className="cover-wrapper">
       <div className="cover-content-wrapper">
         <h3 className="original-advise">Original de Courflix</h3>
         <h1 className="content-title">{title}</h1>
         <div className="content-info">
-          <p className="info">2012</p>
-          <p className="info">16+</p>
+          <p className="info">{year}</p>
+          <p className="info">{calification}</p>
           <p className="info">7 temporadas</p>
         </div>
         <div className="action-wrapper">

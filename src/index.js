@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import Home from "./Pages/Home/App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Chapters from "./Pages/Chapters";
-import Series from "./Pages/Series";
+import Home from "./pages/Home/App";
+import Chapters from "./pages/Chapters";
+import Series from "./pages/Series";
 
 ReactDOM.render(
   <Router>

@@ -3,13 +3,32 @@
     {
       "title": "BLACK SUMMER",
       "image": "images/black-summer.png",
+      "year": "2019",
+      "calification": "16+",
+      "numberOfSeasons": "1 temporada",
       "progress": "60%",
       "description": "Una ansiada luna de miel. Un asesinato terrible. Varios sospechosos. Si sobreviven, serán unas vacaciones de ensueño.",
-      "seasons": { "1": [{ "title": "Episode 1" }, { "title": "Episode 2" }] }
+      "seasons": {
+        "1": [
+          {
+            "title": "Marea Humana",
+            "episodeImg": "images/arrow-ep01.jpg",
+            "plot": "El muro invisible que separa a los vivos de los muertos se derrumbó. En el caos, Rose se separa de su hija, Ryan pierde el rumbo y un hombre desesperado cambia de roles."
+          },
+          {
+            "title": "Conduce",
+            "episodeImg": "",
+            "plot": "William, Sun y Barbara tratan de llegar al estadio en auto, pero el camino está lleno de obstáculos escabrosos: algunos vivos; otros muertos."
+          }
+        ]
+      }
     },
     {
       "title": "ARROW",
       "image": "images/arrow.png",
+      "year": "2012",
+      "calification": "16+",
+      "numberOfSeasons": "7 temporadas",
       "progress": "40%",
       "description": "Basada en las historietas de Flecha Verde, un próspero playboy se transforma en un superhéroe que salva a la ciudad de villanos, armado únicamente con un arco y flechas.",
       "seasons": {
@@ -35,15 +54,37 @@
     {
       "title": "The Seven Deadly Sins",
       "image": "images/sevendeadlysins.png",
+      "year": "2019",
+      "calification": "13+",
+      "numberOfSeasons": "4 temporadas",
       "progress": "60%",
-      "description": "",
+      "description": "Un grupo de tiranos tomó el trono. Ahora la princesa deberá buscar a un grupo de caballeros que la ayude a recuperar el reino.",
       "seasons": {
-        "1": [{ "title": "1.Piloto", "episodeImg": "" }, { "title": "" }]
+        "1": [
+          {
+            "title": "Los Siete Pecados Capitales",
+            "episodeImg": "",
+            "plot": "Una princesa encuentra a un excaballero y se une en la búsqueda de un grupo de caballeros para derrocar a los tiranos y reconstruir el reino."
+          },
+          {
+            "title": "La espada del Caballero Sagrado",
+            "episodeImg": "",
+            "plot": "Cuando Gilthunder clava su espada en el centro de la aldea y bloquea la producción de cerveza, solo Meliodas podrá sacarla y convertirse en el gran salvador."
+          },
+          {
+            "title": "El pecado en el Bosque Dormido",
+            "episodeImg": "",
+            "plot": "Meliodas, Hawk y Elizabeth se embarcarán en un viaje aventurero, en el que Meliodas querrá encontrar información sin importar las consecuencias."
+          }
+        ]
       }
     },
     {
       "title": "The Flash",
       "image": "images/flash.png",
+      "year": "2014",
+      "calification": "13+",
+      "numberOfSeasons": "6 temporadas",
       "progress": "80%",
       "description": "",
       "seasons": {
@@ -56,6 +97,9 @@
     {
       "title": "Dark",
       "image": "images/dark.png",
+      "year": "2017",
+      "calification": "16+",
+      "numberOfSeasons": "3 temporadas",
       "progress": "60%",
       "description": "",
       "seasons": { "1": [{ "title": "", "episodeImg": "" }, { "title": "" }] }
@@ -63,6 +107,9 @@
     {
       "title": "Protector",
       "image": "images/protector.png",
+      "year": "2018",
+      "calification": "16+",
+      "numberOfSeasons": "4 temporadas",
       "progress": "40%",
       "description": "",
       "seasons": {
@@ -72,6 +119,9 @@
     {
       "title": "Vikings",
       "image": "images/vikings.png",
+      "year": "2013",
+      "calification": "16+",
+      "numberOfSeasons": "6 temporadas",
       "progress": "20%",
       "description": "",
       "seasons": { "1": [{ "title": "", "episodeImg": "" }, { "title": "" }] }
@@ -79,13 +129,38 @@
     {
       "title": "Peaky Blinders",
       "image": "images/peaky.jpg",
+      "year": "2015",
+      "calification": "16+",
+      "numberOfSeasons": "5 temporadas",
       "progress": "20%",
       "description": "1919. Inglaterra. Thomas Shelby lidera una conocida banda de Birmingham que avanza con ferocidad por el bajo mundo.",
-      "seasons": { "1": [{ "title": "", "episodeImg": "" }, { "title": "" }] }
+      "seasons": {
+        "1": [
+          {
+            "title": "Episode 1",
+            "episodeImg": "",
+            "plot": "Thomas Shelby reconoce una oportunidad para avanzar en el mundo criminal gracias a un cargamento perdido de armas."
+          },
+          {
+            "title": "Episode 2",
+            "episodeImg": "",
+            "plot": "Thomas arregla una carrera de caballos para provocar a un capo local y comienza una guerra con una familia gitana. El inspector Campbell lleva a cabo una redada."
+          },
+          {
+            "title": "Episode 3",
+            "episodeImg": "",
+            "plot": "Thomas planea acercarse a Billy Kimber en las carreras de Cheltenham y considera aceptar una oferta de simpatizantes del IRA que quieren comprarle las armas robadas."
+          }
+        ]
+      }
     },
     {
       "title": "Arrested Development",
       "image": "images/arrested.jpg",
+      "logo": "images/arrested-dev.png",
+      "year": "2003",
+      "calification": "13+",
+      "numberOfSeasons": "5 temporadas",
       "progress": "20%",
       "description": "Esta es la historia de una familia rica que perdió todo, y el hijo que no tuvo otra opción que mantenerla unida. Esto es Arrested Development.",
       "seasons": { "1": [{ "title": "", "episodeImg": "" }, { "title": "" }] }
