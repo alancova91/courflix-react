@@ -2,10 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import Home from "./pages/Home/App";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from "./pages/Home/App.js";
 import Chapters from "./pages/Chapters";
 import Series from "./pages/Series";
+import Serie from "./pages/Serie";
 
 ReactDOM.render(
   <Router>
@@ -18,6 +19,9 @@ ReactDOM.render(
     <Route exact path="/chapters">
       <Chapters />
     </Route>
+    <Switch>
+      <Route path="/serie/:id" children={<Serie />} />
+    </Switch>
   </Router>,
   document.getElementById("root")
 );

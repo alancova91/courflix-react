@@ -1,20 +1,16 @@
 import "./style.scss";
 import data from "../../data/seriesData.json";
 
-function ChaptersList() {
-  const filteredSeries = data.series.filter(
-    (item) => item.title.toLowerCase() === "arrow"
-  );
-
-  const showSeries = filteredSeries[0];
-
-  const episodesImages = showSeries.seasons[1].map((item) => {
-    return (
-      <img src={item.episodeImg} alt="arrow-ep01" className="episode-image" />
-    );
+function ChaptersList({ id = 2 }) {
+  const findSerie = data.series.find(serie => {
+    return serie.id == id;
   });
 
-  const episodesContent = showSeries.seasons[1].map((item) => {
+  const episodesImages = findSerie.seasons[1].map(item => {
+    return <img src={`/${item.episodeImg}`} alt={item.title} className="episode-image" />;
+  });
+
+  const episodesContent = findSerie.seasons[1].map(item => {
     return (
       <div className="episode-content">
         <p className="episode-title">{item.title}</p>

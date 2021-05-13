@@ -7,7 +7,6 @@ function Navbar() {
   const [isOpen, setOpen] = useState(false);
 
   let open;
-  let notOpen;
 
   if (isOpen) {
     open = (
@@ -15,22 +14,20 @@ function Navbar() {
         <Link className="link-hidden-menu" to="/">
           Inicio
         </Link>
-        <a className="link-hidden-menu" href="#">
+        <p className="link-hidden-menu" href="#">
           Series
-        </a>
-        <a className="link-hidden-menu" href="#">
+        </p>
+        <p className="link-hidden-menu" href="#">
           Peliculas
-        </a>
-        <a className="link-hidden-menu" id="no-separation" href="#">
+        </p>
+        <p className="link-hidden-menu" id="no-separation" href="#">
           Agregados Recientemente
-        </a>
-        <a className="link-hidden-menu" href="#">
+        </p>
+        <p className="link-hidden-menu" href="#">
           Mi lista
-        </a>
+        </p>
       </div>
     );
-
-    notOpen = <div> </div>;
   }
 
   return (
@@ -40,22 +37,22 @@ function Navbar() {
         {open}
       </div>
       <Link to="/" className="logo-wrapper">
-        <img src="images/courflix-icon.png" className="logo" />
+        <img src="/images/courflix-icon.png" className="logo" alt="courflix" />
       </Link>
       <nav className="links-wrapper">
         <Link to="/" className="link">
           Inicio
         </Link>
-        <a href="#" className="link">
+        <a href="/" className="link">
           Series
         </a>
-        <a href="#" className="link">
+        <a href="/" className="link">
           Peliculas
         </a>
-        <a href="#" className="link">
+        <a href="/" className="link">
           Agregados Recientemente
         </a>
-        <a href="#" className="link">
+        <a href="/" className="link">
           Mi lista
         </a>
       </nav>

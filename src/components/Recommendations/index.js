@@ -6,11 +6,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function Recommendations() {
-  const catalogImages = data.series.map((item) => {
+  const catalogImages = data.series.map(item => {
     return (
-      <a href="#" className="catalog-content">
+      <Link to={`/serie/${item.id}`} className="catalog-content" key={item.id}>
         <img src={item.image} alt="" className="cover-images" />
-      </a>
+      </Link>
     );
   });
 
@@ -28,8 +28,8 @@ function Recommendations() {
           slidesToShow: 5,
           slidesToScroll: 2,
           infinite: false,
-          dots: false,
-        },
+          dots: false
+        }
       },
       {
         breakpoint: 1024,
@@ -37,34 +37,34 @@ function Recommendations() {
           slidesToShow: 4,
           slidesToScroll: 2,
           infinite: false,
-          arrows: false,
-        },
+          arrows: false
+        }
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 2,
-          arrows: false,
-        },
+          arrows: false
+        }
       },
       {
         breakpoint: 425,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          arrows: false,
-        },
+          arrows: false
+        }
       },
       {
         breakpoint: 320,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          arrows: false,
-        },
-      },
-    ],
+          arrows: false
+        }
+      }
+    ]
   };
 
   return (

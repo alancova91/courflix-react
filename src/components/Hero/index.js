@@ -2,17 +2,15 @@ import "./style.scss";
 import data from "../../data/seriesData.json";
 
 function Main() {
-  const callTitle = data.series.filter(
-    (item) => item.title.toLowerCase() === "black summer"
-  );
+  const callTitle = data.series.filter(item => item.title.toLowerCase() === "black summer");
 
-  const title = callTitle.map((item) => item.title);
+  const title = callTitle.map(item => item.title);
 
-  const plot = callTitle.map((item) => item.description);
+  const plot = callTitle.map(item => item.description);
 
-  const year = callTitle.map((item) => item.year);
+  const year = callTitle.map(item => item.year);
 
-  const calification = callTitle.map((item) => item.calification);
+  const calification = callTitle.map(item => item.calification);
 
   return (
     <div className="cover-wrapper">
@@ -25,17 +23,15 @@ function Main() {
           <p className="info">7 temporadas</p>
         </div>
         <div className="action-wrapper">
-          <a href="#" className="action">
+          <a href="/" className="action">
             Reproducir
           </a>
-          <a href="#" className="action">
+          <a href="/" className="action">
             + Mi lista
           </a>
         </div>
         <p className="content-season">Ve la temporada 1</p>
-        <>
-          <p className="content-plot">{plot}</p>
-        </>
+        <p className="content-plot">{plot}</p>
       </div>
     </div>
   );

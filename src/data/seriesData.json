@@ -9,6 +9,7 @@
       "numberOfSeasons": "1 temporada",
       "progress": "60%",
       "description": "Una ansiada luna de miel. Un asesinato terrible. Varios sospechosos. Si sobreviven, serán unas vacaciones de ensueño.",
+      "cover": "/images/black-summer.png",
       "seasons": {
         "1": [
           {
@@ -92,10 +93,7 @@
       "progress": "80%",
       "description": "",
       "seasons": {
-        "1": [
-          { "title": "1.Piloto", "episodeImg": "" },
-          { "title": "2. Honra a tu padre" }
-        ]
+        "1": [{ "title": "1.Piloto", "episodeImg": "" }, { "title": "2. Honra a tu padre" }]
       }
     },
     {
