@@ -1,6 +1,7 @@
 {
   "series": [
     {
+      "id": "1",
       "title": "BLACK SUMMER",
       "image": "images/black-summer.png",
       "year": "2019",
@@ -24,6 +25,7 @@
       }
     },
     {
+      "id": "2",
       "title": "ARROW",
       "image": "images/arrow.png",
       "year": "2012",
@@ -52,6 +54,7 @@
       }
     },
     {
+      "id": "3",
       "title": "The Seven Deadly Sins",
       "image": "images/sevendeadlysins.png",
       "year": "2019",
@@ -80,6 +83,7 @@
       }
     },
     {
+      "id": "4",
       "title": "The Flash",
       "image": "images/flash.png",
       "year": "2014",
@@ -95,6 +99,7 @@
       }
     },
     {
+      "id": "5",
       "title": "Dark",
       "image": "images/dark.png",
       "year": "2017",
@@ -105,6 +110,7 @@
       "seasons": { "1": [{ "title": "", "episodeImg": "" }, { "title": "" }] }
     },
     {
+      "id": "6",
       "title": "Protector",
       "image": "images/protector.png",
       "year": "2018",
@@ -117,6 +123,7 @@
       }
     },
     {
+      "id": "7",
       "title": "Vikings",
       "image": "images/vikings.png",
       "year": "2013",
@@ -127,6 +134,7 @@
       "seasons": { "1": [{ "title": "", "episodeImg": "" }, { "title": "" }] }
     },
     {
+      "id": "8",
       "title": "Peaky Blinders",
       "image": "images/peaky.jpg",
       "year": "2015",
@@ -155,6 +163,7 @@
       }
     },
     {
+      "id": "9",
       "title": "Arrested Development",
       "image": "images/arrested.jpg",
       "logo": "images/arrested-dev.png",
