@@ -1,4 +1,4 @@
-import "../../reset.css";
+import "./style.scss";
 import Navbar from "../../components/Navbar";
 import Chapters from "../../components/ChaptersList";
 import SelectedCover from "../../components/SelectedCover";

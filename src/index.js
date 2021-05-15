@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import "./reset.css";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -20,7 +21,10 @@ ReactDOM.render(
       <Chapters />
     </Route>
     <Switch>
-      <Route path="/serie/:id" children={<Serie />} />
+      {/* forzar a que la ruta use los params. */}
+      <Route path="/serie/:id">
+        <Serie />
+      </Route>
     </Switch>
   </Router>,
   document.getElementById("root")

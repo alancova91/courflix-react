@@ -38,17 +38,17 @@
         "1": [
           {
             "title": "1.Piloto",
-            "episodeImg": "images/arrow-ep01.jpg",
+            "episodeImg": "/images/arrow-ep01.jpg",
             "plot": "Supuestamente muerto por cinco años antes de que lo descubrieran en una isla del Pacífico, el multimillonario playboy Oliver Queen vuelve a casa como un hombre distinto."
           },
           {
             "title": "2. Honra a tu padre",
-            "episodeImg": "images/arrow-ep02.jpg",
+            "episodeImg": "/images/arrow-ep02.jpg",
             "plot": "Oliver pone su mira en derrotar a un criminal relacionado con la tríada china: Martin Somers, a quien Laurel está demandando."
           },
           {
             "title": "3. Pistoleros Solitarios",
-            "episodeImg": "images/arrow-ep03.jpg",
+            "episodeImg": "/images/arrow-ep03.jpg",
             "plot": "Cuando un pistolero mata a uno de los objetivos de Oliver, él solicita la ayuda de la detective Lance."
           }
         ]
@@ -92,8 +92,12 @@
       "numberOfSeasons": "6 temporadas",
       "progress": "80%",
       "description": "",
+      "backgroundImage": "/images/black-summer.png",
       "seasons": {
-        "1": [{ "title": "1.Piloto", "episodeImg": "" }, { "title": "2. Honra a tu padre" }]
+        "1": [
+          { "title": "1.Piloto", "episodeImg": "" },
+          { "title": "2. Honra a tu padre" }
+        ]
       }
     },
     {

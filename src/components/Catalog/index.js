@@ -20,8 +20,8 @@ function catalogWrapper() {
           slidesToShow: 5,
           slidesToScroll: 3,
           infinite: false,
-          dots: true
-        }
+          dots: true,
+        },
       },
       {
         breakpoint: 1024,
@@ -29,37 +29,37 @@ function catalogWrapper() {
           slidesToShow: 4,
           slidesToScroll: 2,
           infinite: false,
-          arrows: false
-        }
+          arrows: false,
+        },
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 2.5,
-          arrows: false
-        }
+          arrows: false,
+        },
       },
       {
         breakpoint: 425,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          arrows: false
-        }
+          arrows: false,
+        },
       },
       {
         breakpoint: 320,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          arrows: false
-        }
-      }
-    ]
+          arrows: false,
+        },
+      },
+    ],
   };
 
-  const catalogImages = data.series.map(item => {
+  const catalogImages = data.series.map((item) => {
     return (
       <Link to={`/serie/${item.id}`} className="catalog-content">
         <img src={item.image} alt="" className="cover-images2" />
@@ -67,12 +67,12 @@ function catalogWrapper() {
     );
   });
 
-  const catalogImages2 = data.series.map(item => {
+  const catalogImages2 = data.series.map((item) => {
     return (
       <div className="content-and-progress">
-        <a href={`/serie/${item.id}`} className="catalog-content">
+        <Link to={`/serie/${item.id}`} className="catalog-content">
           <img src={item.image} alt="" className="cover-images" />
-        </a>
+        </Link>
         <div className="progress-bar">
           <div className="progress" style={{ width: item.progress }}></div>
         </div>

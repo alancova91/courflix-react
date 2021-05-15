@@ -3,15 +3,26 @@ import { Link } from "react-router-dom";
 import data from "../../data/seriesData.json";
 
 function SelectedCover({ id = 2 }) {
-  const findSerie = data.series.find(serie => {
+  const findSerie = data.series.find((serie) => {
     return serie.id == id;
   });
 
-  const { title, description, year, calification, numberOfSeasons, image, cover } = findSerie;
+  const {
+    title,
+    description,
+    year,
+    calification,
+    numberOfSeasons,
+    image,
+    cover,
+  } = findSerie;
 
   return (
     <div className="selected-cover-wrapper">
-      <div className="series-content-wrapper" style={{ backgroundImage: `url("${cover}")` }}>
+      <div
+        className="series-content-wrapper"
+        style={{ backgroundImage: `url("${cover}")` }}
+      >
         <img src={image} alt={title} className="logo-arrow" />
         <p className="selected-series-title">{title}</p>
         <div className="series-info">
@@ -24,9 +35,12 @@ function SelectedCover({ id = 2 }) {
         </div>
 
         <div className="action-wrapper">
-          <Link to="/chapters" className="action">
+          <a
+            href="https://www.youtube.com/watch?v=82iLDVrS3wQ&list=PLkGACYlyiRSfwsiQZ8hyvmXNsBZVmE6XD&ab_channel=GreenArrow"
+            className="action"
+          >
             Reproducir
-          </Link>
+          </a>
           <a href="/" className="action">
             + Mi lista
           </a>

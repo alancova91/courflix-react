@@ -2,18 +2,18 @@ import "./style.scss";
 import data from "../../data/seriesData.json";
 
 function Main() {
-  const callTitle = data.series.filter(item => item.title.toLowerCase() === "black summer");
+  const random = Math.floor(Math.random() * (data.series.length - 1) + 1);
+  const callTitle = data.series.find((serie) => {
+    return serie.id == random;
+  });
 
-  const title = callTitle.map(item => item.title);
-
-  const plot = callTitle.map(item => item.description);
-
-  const year = callTitle.map(item => item.year);
-
-  const calification = callTitle.map(item => item.calification);
-
+  const { title, year, calification, description, backgroundImage } = callTitle;
+  /*background-image: url("../../assets/images/black-summer.png");*/
   return (
-    <div className="cover-wrapper">
+    <div
+      className="cover-wrapper"
+      style={{ backgroundImage: `url("${backgroundImage}")` }}
+    >
       <div className="cover-content-wrapper">
         <h3 className="original-advise">Original de Courflix</h3>
         <h1 className="content-title">{title}</h1>
@@ -31,7 +31,7 @@ function Main() {
           </a>
         </div>
         <p className="content-season">Ve la temporada 1</p>
-        <p className="content-plot">{plot}</p>
+        <p className="content-plot">{description}</p>
       </div>
     </div>
   );
