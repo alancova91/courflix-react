@@ -10,6 +10,7 @@
       "progress": "60%",
       "description": "Una ansiada luna de miel. Un asesinato terrible. Varios sospechosos. Si sobreviven, serán unas vacaciones de ensueño.",
       "cover": "/images/black-summer.png",
+      "backgroundImage": "/images/black-summer.png",
       "seasons": {
         "1": [
           {
@@ -34,6 +35,7 @@
       "numberOfSeasons": "7 temporadas",
       "progress": "40%",
       "description": "Basada en las historietas de Flecha Verde, un próspero playboy se transforma en un superhéroe que salva a la ciudad de villanos, armado únicamente con un arco y flechas.",
+      "backgroundImage": "/images/arrow-background.jpg",
       "seasons": {
         "1": [
           {
@@ -63,6 +65,7 @@
       "numberOfSeasons": "4 temporadas",
       "progress": "60%",
       "description": "Un grupo de tiranos tomó el trono. Ahora la princesa deberá buscar a un grupo de caballeros que la ayude a recuperar el reino.",
+      "backgroundImage": "/images/seven-deadly-background.jpg",
       "seasons": {
         "1": [
           {
@@ -91,12 +94,25 @@
       "calification": "13+",
       "numberOfSeasons": "6 temporadas",
       "progress": "80%",
-      "description": "",
-      "backgroundImage": "/images/black-summer.png",
+      "description": "En esta serie del clásico superhéroe, un especialista forense vuelve de un coma y descubre que posee poderes que le permitirán enfrentar a quienes amenacen a su ciudad.",
+      "backgroundImage": "/images/flash-background.jpg",
       "seasons": {
         "1": [
-          { "title": "1.Piloto", "episodeImg": "" },
-          { "title": "2. Honra a tu padre" }
+          {
+            "title": "Piloto",
+            "episodeImg": "",
+            "plot": "Al despertar de un coma, Barry enfoca su extraordinaria velocidad para combatir al metahumano que utiliza sus poderes de manipulación de la atmósfera para robar bancos."
+          },
+          {
+            "title": "Episodio 2",
+            "episodeImg": "",
+            "plot": "Barry se enfrenta a los atacantes de la ceremonia de premiación donde está con Iris y los efectos secundarios de su superpoder se manifiestan."
+          },
+          {
+            "title": "Episodio 3",
+            "episodeImg": "",
+            "plot": "Flash y Joe buscan al metahumano cuya especialidad son los gases tóxicos, y Caitlin revive la noche de la explosión que mató a su prometido."
+          }
         ]
       }
     },
@@ -108,20 +124,56 @@
       "calification": "16+",
       "numberOfSeasons": "3 temporadas",
       "progress": "60%",
-      "description": "",
-      "seasons": { "1": [{ "title": "", "episodeImg": "" }, { "title": "" }] }
+      "description": "La desaparición de un niño lleva a cuatro familias a una frenética búsqueda, mientras descubren un misterio que abarca tres generaciones.",
+      "backgroundImage": "/images/dark-background.jpg",
+      "seasons": {
+        "1": [
+          {
+            "title": "Secretos",
+            "episodeImg": "",
+            "plot": "2019. La desaparición de un niño local aterroriza a los habitantes de Winden, un pueblito alemán con una historia tan trágica como extraña."
+          },
+          {
+            "title": "Mentiras",
+            "episodeImg": "",
+            "plot": "La policía queda desconcertada tras un descubrimiento macabro, y Ulrich busca una orden de allanamiento para la planta de energía. Un extraño se registra en el hotel."
+          },
+          {
+            "title": "Pasado y presente",
+            "episodeImg": "",
+            "plot": "1986. Mads, el hermano de Ulrich, está desaparecido desde hace un mes. La confusión se apodera de la situación cuando el pasado y el presente se entrecruzan."
+          }
+        ]
+      }
     },
     {
       "id": "6",
-      "title": "Protector",
+      "title": "The Protector",
       "image": "images/protector.png",
       "year": "2018",
       "calification": "16+",
       "numberOfSeasons": "4 temporadas",
       "progress": "40%",
-      "description": "",
+      "description": "Un joven habitante de la moderna Estambul descubre sus lazos con una antigua orden secreta y se dispone a salvar a su ciudad de un enemigo inmortal.",
+      "backgroundImage": "/images/protector-background.jpg",
       "seasons": {
-        "1": [{ "title": "1.Piloto", "episodeImg": "" }, { "title": "" }]
+        "1": [
+          {
+            "title": "Episodio 1",
+            "episodeImg": "",
+            "plot": "Hakan busca desesperadamente una oportunidad para iniciar un nuevo negocio, hasta que se topa con una camisa que podría valer muchísimo dinero."
+          },
+          {
+            "title": "Episodio 2",
+            "episodeImg": "",
+            "plot": "A Hakan le cuesta creerse la historia del Protector. Aunque le pidieron que se quedara quieto para que el Inmortal no lo encontrara, decide salir a buscar a Memo."
+          },
+          {
+            "title": "Episodio 3",
+            "episodeImg": "",
+            "plot": "Hakan y Zeynep llegan al lugar donde deben encontrarse con la Fiel que protege el anillo y terminan en una casa decrépita en medio de la nada."
+          }
+        ]
       }
     },
     {
@@ -132,8 +184,27 @@
       "calification": "16+",
       "numberOfSeasons": "6 temporadas",
       "progress": "20%",
-      "description": "",
-      "seasons": { "1": [{ "title": "", "episodeImg": "" }, { "title": "" }] }
+      "description": "Este drama realista recuenta las hazañas del vikingo Ragnar Lothbrok durante la expansión nórdica al retar a un líder falto de visión.",
+      "backgroundImage": "/images/vikings-background.jpg",
+      "seasons": {
+        "1": [
+          {
+            "title": "El Rey Pescador",
+            "episodeImg": "",
+            "plot": "Ivar trata de ganarse a Ubbe y Hvitserk con una estrategia arriesgada para el gran ejército. Crece un poder religioso entre los sajones. Floki toma otro rumbo."
+          },
+          {
+            "title": "Los difuntos",
+            "episodeImg": "",
+            "plot": "Lagertha no está a gusto con el regreso del rey Harald a Kattegat. Se forman alianzas para enfrentar a los nórdicos que tomaron York. Floki navega aguas turbulentas."
+          },
+          {
+            "title": "Patria",
+            "episodeImg": "",
+            "plot": "El obispo Heahmund y Aethelwulf ponen en marcha el plan de batalla, que divide a los hijos de Ragnar. Harald presenta a Astrid ante su pueblo."
+          }
+        ]
+      }
     },
     {
       "id": "8",
@@ -142,6 +213,7 @@
       "year": "2015",
       "calification": "16+",
       "numberOfSeasons": "5 temporadas",
+      "backgroundImage": "/images/peaky-background.jpeg",
       "progress": "20%",
       "description": "1919. Inglaterra. Thomas Shelby lidera una conocida banda de Birmingham que avanza con ferocidad por el bajo mundo.",
       "seasons": {
@@ -172,9 +244,28 @@
       "year": "2003",
       "calification": "13+",
       "numberOfSeasons": "5 temporadas",
+      "backgroundImage": "/images/arrested-background.jpg",
       "progress": "20%",
       "description": "Esta es la historia de una familia rica que perdió todo, y el hijo que no tuvo otra opción que mantenerla unida. Esto es Arrested Development.",
-      "seasons": { "1": [{ "title": "", "episodeImg": "" }, { "title": "" }] }
+      "seasons": {
+        "1": [
+          {
+            "title": "Piloto",
+            "episodeImg": "/images/arrested1x01.jpg",
+            "plot": "Tras ser ignorado en el negocio familiar, Michael acepta un empleo en Arizona, pero el arresto de su padre por manejos contables sospechosos lo hace quedarse en casa."
+          },
+          {
+            "title": "Top Banana",
+            "episodeImg": "/images/arrested1x02.jpg",
+            "plot": "Cuando Michael intenta obtener el control del negocio familiar, su padre se lo impide desde la prisión, lo que provoca la destrucción del puesto de bananas."
+          },
+          {
+            "title": "Buster crece",
+            "episodeImg": "/images/arrested1x03.jpg",
+            "plot": "Un reticente Michael se hace cargo de Buster mientras intenta acercarse a George Michael, cada vez más distante."
+          }
+        ]
+      }
     }
   ]
 }

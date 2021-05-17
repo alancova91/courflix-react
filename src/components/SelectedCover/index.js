@@ -14,14 +14,14 @@ function SelectedCover({ id = 2 }) {
     calification,
     numberOfSeasons,
     image,
-    cover,
+    backgroundImage,
   } = findSerie;
 
   return (
     <div className="selected-cover-wrapper">
       <div
         className="series-content-wrapper"
-        style={{ backgroundImage: `url("${cover}")` }}
+        style={{ backgroundImage: `url("${backgroundImage}")` }}
       >
         <img src={image} alt={title} className="logo-arrow" />
         <p className="selected-series-title">{title}</p>

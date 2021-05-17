@@ -1,41 +1,48 @@
 .selected-cover-wrapper {
-  background-position: top;
-  background-size: cover;
+  /*background-position: top;
+  background-size: cover;*/
 
   .series-content-wrapper {
     color: #fff;
     padding: 0px 0 30px 60px;
-    max-width: 740px;
-    min-height: 65vh;
+    max-width: 1980px;
+    min-height: 55vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 
+    background-size: cover;
+
     @media (max-width: 1440px) {
       padding: 160px 0 30px 60px;
-      min-height: 70vh;
+      min-height: 55vh;
+      max-width: 1440px;
     }
 
     @media (max-width: 1024px) {
       padding: 0 0 30px 35px;
       min-height: 50vh;
+      background-position: center;
+      background-size: cover;
     }
 
     @media (max-width: 768px) {
       color: #fff;
       padding: 0 0 0 15px;
       width: 100%;
-      max-width: 425px;
+
       height: auto;
       min-height: 400px;
     }
 
     @media (max-width: 425px) {
       min-height: 375px;
+      width: 100%;
     }
 
     @media (max-width: 375px) {
       min-height: 330px;
+      width: 100%;
     }
 
     @media (max-width: 320px) {
@@ -211,7 +218,7 @@
 
     .content-plot {
       font-size: 1.3rem;
-      padding: 10px 35px 0px 0px;
+      padding: 10px 840px 0px 0px;
       line-height: 30px;
       margin-right: 50px;
 
